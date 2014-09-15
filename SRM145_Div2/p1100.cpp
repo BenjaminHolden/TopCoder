@@ -32,7 +32,7 @@ public:
     int last_time = 0;
     for(auto p:purchases){
       int s,c,t;
-      sscanf(p.c_str(),"%d,%d,%d",&s,&c,&t);
+      sscanf(p.c_str(),"%d,%d:%d",&s,&c,&t);
       if(t-last_time >= 5){
 	cout <<"Time >=5, so may rotate"<<endl;
 	rotateExpensive();
